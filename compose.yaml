@@ -1,0 +1,16 @@
+services:
+  website:
+    build: website
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./website:/app
+  mongo:
+    build: mongo-3.2
+    restart: always
+    ports:
+      - "27017:27017"
+    # environment:
+    #   MONGO_INITDB_ROOT_USERNAME: root
+    #   MONGO_INITDB_ROOT_PASSWORD: example

@@ -1,0 +1,6 @@
+[submodule "website"]
+	path = website
+	url = git@github.com:Laukei/recipebook-website.git
+[submodule "mongo-3.2"]
+	path = mongo-3.2
+	url = git@github.com:Laukei/mongo-3.2.git
